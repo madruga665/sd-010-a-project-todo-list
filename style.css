@@ -23,6 +23,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 100%;
 }
 .btn-container {
   display: flex;
@@ -30,12 +31,12 @@ li {
   flex-wrap: wrap;
   align-items: center;
   margin-top: 100px;
-  max-width: 60%;
+  max-width: 80%;
 }
 
 .input-tarefa {
-  max-width: 25%;
-  min-width: 25%;
+  max-width: 10% !important;
+  min-width: 60% !important;
 }
 
 .form-control{
