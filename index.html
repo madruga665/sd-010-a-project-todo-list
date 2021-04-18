@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-  <header>Minha Lista de Tarefas</header>
-  <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
-  <input type="text" id="texto-tarefa">
-  <button id="criar-tarefa">Adicionar</button>
-  <ol id="lista-tarefas"></ol>
-  <button id="apaga-tudo">X</button>
-  <button id="remover-finalizados">Remover Completados</button>
-  <button id="remover-selecionado">Remover Selecionado</button>
-  <button id="salvar-tarefas">Salvar Lista</button>
-  <button id="mover-cima">Para Cima</button>
-  <button id="mover-baixo">Para Baixo</button>
-
-  <script src="script.js"></script>
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <title>Lista de Tarefas</title>
+  </head>
+  <body>
+    <div class="container border border-5">
+      <h2 class="card-title" >Minha Lista de Tarefas</h2>
+      <h6 class="card-subtitle mb-2 text-muted" id="funcionamento">
+        Clique duas vezes em um item para marcá-lo como completo
+      </h6>
+      <div class="input-container input-group mb-3">
+        <input class="form-control input-tarefa" type="text" id="texto-tarefa" placeholder="Digite uma nova tarefa" />
+        <button class="btn btn-primary" id="criar-tarefa">Adicionar</button>
+      </div>
+      <ol class="list-group list-group-numbered" id="lista-tarefas"></ol>
+      <div class="btn-container">
+        <button class="btn btn-danger" id="apaga-tudo">🗑️ Remover Tudo</button>
+        <button class="btn btn-warning" id="remover-finalizados">🗑️ Remover Completados</button>
+        <button class="btn btn-warning" id="remover-selecionado"> 🗑️Remover Selecionado</button>
+        <button class="btn btn-success" id="salvar-tarefas">💾️ Salvar Lista</button>
+        <button class="btn btn-outline-dark" id="mover-cima">👆️ Mover Pra Cima</button>
+        <button class="btn btn-outline-dark" id="mover-baixo">👇️ Mover Pra Baixo</button>
+      </div>
+    </div>
+    <script src="bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
